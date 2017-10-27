@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="app.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js" defer></script>
-    <!--<script src="../frontend/components/phone-page/phone-page.js" defer></script>
-    <script src="../frontend/components/phone-catalogue/phone-catalogue.js" defer></script>
-    <script src="../frontend/app.js" defer></script>-->
     <script src="index.js" defer></script>
 </head>
 <body>
@@ -51,26 +48,6 @@
         </div>
     </div>
 </div>
-
-<footer></footer>
-
-<script type="text/template" id="catalogue-template">
-
-    <ul class="phones">
-
-        <% phones.forEach((phone) => { %>
-        <li class="thumbnail">
-            <a href="#!/phones/<%= phone.id %>" class="thumb">
-                <img alt="<%- phone.name %>" src="<%= phone.imageUrl %>">
-            </a>
-            <a href="#!/phones/<%= phone.id %>"><%- phone.name %></a>
-            <p><%- phone.snippet %></p>
-        </li>
-        <% }); %>
-
-    </ul>
-
-</script>
 
 </body>
 </html>
